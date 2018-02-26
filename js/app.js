@@ -49,7 +49,11 @@ Create a div element and give it an id of "name7". Inside this div element, give
 
 Append this div element to the nameParent div*/
 
-
+var divName7 = document.createElement('div');
+var textName7 = document.createTextNode('Peter Griffin');
+divName7.appendChild(textName7);
+document.getElementById('nameParent').appendChild(divName7);
+document.getElementById('nameParent').style.textAlign = 'center';
 
 /*8. Tim Duncan
 
@@ -57,8 +61,13 @@ Create a div element give it an id of "alias8". Inside this div element, give it
 
 Append this div element to the aliasParent div.*/
 
-
+var divAlias8 = document.createElement('div');
+var textAlias8 = document.createTextNode('Old Man Riverwalk');
+divAlias8.appendChild(textAlias8);
+document.getElementById('aliasParent').appendChild(divAlias8);
+document.getElementById('aliasParent').style.textAlign = 'center';
 
 //Final Boss
 /*9. Create your own profile.*/
 
+var myProf = document.createElement('div');
