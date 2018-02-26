@@ -70,4 +70,28 @@ document.getElementById('aliasParent').style.textAlign = 'center';
 //Final Boss
 /*9. Create your own profile.*/
 
-var myProf = document.createElement('div');
+var divNameProf = document.createElement('div');
+var textNameProf = document.createTextNode('Sean Kagawa');
+divNameProf.appendChild(textNameProf);
+
+var elemNameProf = document.getElementsByClassName('block3')[2];
+elemNameProf.appendChild(divNameProf);
+document.getElementsByClassName('block3')[2].style.textAlign = 'center';
+
+var divPosProf = document.createElement('div');
+var textPosProf = document.createTextNode('Junior Developer');
+divPosProf.appendChild(textPosProf);
+
+elemNameProf.appendChild(divPosProf);
+
+var divAliasProf = document.createElement('div');
+var textAliasProf = document.createTextNode('The DOM King');
+divAliasProf.appendChild(textAliasProf);
+
+elemNameProf.appendChild(divAliasProf);
+
+var divBioProf = document.createElement('div');
+var textBioProf = document.createTextNode('"Eager to learn and unwilling to throw in the towel."');
+divBioProf.appendChild(textBioProf);
+
+elemNameProf.appendChild(divBioProf);
